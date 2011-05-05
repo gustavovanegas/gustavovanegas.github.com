@@ -1,0 +1,267 @@
+/*---------------------------------------------------------------------------*\
+    RESET 
+\*---------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---------------------------------------------------------------------------*\
+    TYPE
+\*---------------------------------------------------------------------------*/
+html {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #000;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-shadow: #6F6F6F 1px 1px 2px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+p, ul, strong {
+    line-height: 24px;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*---------------------------------------------------------------------------*\
+    MAIN 
+\*---------------------------------------------------------------------------*/
+html {
+    background-image: url('/img/css/background.png');
+    background-repeat: repeat;
+}
+
+#main {
+    width: 960px;
+    margin: 70px auto;
+}
+
+.principal {
+    padding: 70px 0;
+}
+
+#servicios {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/*---------------------------------------------------------------------------*\
+    HEADER 
+\*---------------------------------------------------------------------------*/
+#header {
+    background: url('/img/css/bg-header.png') 0 0 repeat-x #333;
+    color: #FFF;
+    padding-top:10px;
+}
+
+#header h1 {
+    color: #FFF;
+}
+
+#header #titulo{
+    margin-top: 20px;
+    background-image: url('/img/logo.png');
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    height: 80px;
+}
+
+#header p {
+    font-size: 20px;
+}
+
+#header ul {
+    text-align: right;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#header li {
+    display: inline;
+}
+
+#header a {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #FFF;
+}
+
+#header li:hover a {
+    color:  #333;
+    background-color: #EFEFEF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*---------------------------------------------------------------------------*\
+    FOOTER
+\*---------------------------------------------------------------------------*/
+#footer {
+    background-color: #282828;
+    margin-bottom: 0px;
+    padding-top:20px;
+    text-align: left;
+    color: #FFF;
+}
+
+#footer #mensaje {
+    font-style: italic;
+}
+
+#footer #contacto {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: right;
+}
+
+#footer #contacto h3 {
+    font-size:24px;
+}
+
+#footer #contacto p {
+    font-size:18px;
+    margin-top:15px;
+}
+
+#footer #copy {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15px;
+    padding:15px 0;
+    text-align: center;
+}
+
+#footer #contacto a {
+	color: #FFF;
+}
+
+#footer #contacto  a:hover {
+    color: #CCC;
+    font-weight: bolder;
+}
+
+/*---------------------------------------------------------------------------*\
+    IMAGES
+\*---------------------------------------------------------------------------*/
+#frame {
+    position: absolute;
+    z-index: 0;
+    top:-30px;
+    left:-68px;
+}
+
+.slides_container {
+    display: none;
+    width: 470px;
+}
+
+.slides_container div {
+    display: block;
+    width: 480px;
+    height: 365px;
+}
+
+#slides .prev, #slides .next {
+    position: absolute;
+    display: block;
+    top: 160px;
+    left: -37px;
+    z-index: 101;
+}
+
+#slides .next {
+    left: 473px;
+}
+
+.pagination {
+    display: none;
+}
+
+.photo {
+    margin: 0 5px 20px 5px;
+    height:225px;
+    border: 5px solid #BEBEBE;
+}
+
+.photo:hover {
+    border: 5px solid #3F3F3F;
+}
